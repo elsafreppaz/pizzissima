@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzissima</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/pizza-complete.png">
+</head>
+
+
+<body>
+    <audio id="myAudio">
+        <source src="assets/audio.ogg" type="audio/ogg">
+        <source src="assets/audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <section id="gameplay">
+
+        <div class="left-container">
+            <a href="index.html" id="logo-gp">
+                <img src="assets/Logo.svg" alt="Pizzissima">
+            </a>
+            <button id="startGame" class="ligneItem" onclick="startGame()">Lancer la partie</button>
+            <h2 id="best-score" class="ligneItem">Meilleur score : 0</h2>
+        </div>
+
+        <div class="right-container">
+            <h2 id="score">Score 0</h2>
+            <div id="pizza-container">
+                <div id="board">
+                    <div class="tile" id="1"></div>
+                    <div class="tile" id="2"></div>
+                    <div class="tile" id="3"></div>
+                    <div class="tile" id="4"></div>
+                    <div class="tile" id="5"></div>
+                    <div class="tile" id="6"></div>
+                    <div class="tile" id="7"></div>
+                    <div class="tile" id="8"></div>
+                    <div class="tile" id="9"></div>
+                </div>
+            </div>
+            <div id="progress-container">
+                <div id="progress-bar"></div>
+                <h2 id="time">30s</h2>
+            </div>
+        </div>
+
+        <div id="startOverlay" class="overlay1">
+            <div class="overlay-content1">
+                <img src="assets/closing-cross.svg" id="closing-cross">
+                <p id="remember">Souviens<span id="tiret">-</span>toi</p>
+                <p class="consigne">Ne prends pas d'ananas !</p>
+                <div class="cardcontainer">
+                    <div class="card mushroom-card">
+                        <img src="assets/mushroom.png">
+                        <p class="pts">+ 10 points</p>
+                    </div>
+                    <div class="card basil-card">
+                        <img src="assets/basil.png">
+                        <p class="pts">+ 20 points</p>
+                    </div>
+                    <div class="card pineapple-card">
+                        <img src="assets/pineapple.png">
+                        <p class="pts negative">- 20 points</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="endOverlay" class="overlay">
+            <div class="overlay-content">
+                <p id="aTavola">A tavola !</p>
+                <h2 id="overlay-score">Score 0</h2>
+                <img src="assets/end-pizza.png" id="end-pizza" alt="Pizza">
+                <div class="endScoreSection">
+                    <h2 id="overlay-best-score" class="ligneItem scoreOverlay">Meilleur score : 0</h2>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="game.js"></script>
+
+
+</body>
+</html>
