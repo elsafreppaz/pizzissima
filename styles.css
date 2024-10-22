@@ -216,7 +216,7 @@ button {
 
 #time {
     text-align: center;
-    font-family: "Inter";
+    font-family: "Lato";
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 50px;
@@ -224,13 +224,13 @@ button {
 
 
 h2 {
-    font-family: "Inter";
+    font-family: "Lato";
     font-size: 1vw;
     font-weight: 500;
 }
 
 .ligneItem {
-    font-family: "Inter";
+    font-family: "Lato";
     width: 80%;
     height: 40px;
     display: flex;
@@ -243,7 +243,7 @@ h2 {
 
 
 #startGame {
-    font-family: "Inter";
+    font-family: "Lato";
     font-size: 1vw;
     font-weight: 500;
     border: 2px solid var(--rouge);
