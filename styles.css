@@ -230,6 +230,7 @@ h2 {
 }
 
 .ligneItem {
+    font-family: "Inter";
     width: 80%;
     height: 40px;
     display: flex;
